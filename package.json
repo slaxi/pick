@@ -6,7 +6,8 @@
   "types": "dist/src/index.d.ts",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "src/components/video/video-wrapper/Video.css"
   ],
   "scripts": {
     "dev": "vite",
