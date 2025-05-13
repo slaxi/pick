@@ -3,7 +3,7 @@ import Video from "../video/Video";
 import Title from "../../title/Title";
 import VideoOverlay from "../video-overlay/VideoOverlay";
 import Text from "../../text/Text";
-import '../Video.css'
+import '../../video/Video.css'
 
 const VideoWrapper = ({ children }: { children?: React.ReactNode }) => {
   return (

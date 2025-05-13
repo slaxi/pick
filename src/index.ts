@@ -1,3 +1,5 @@
+import '../src/components/video/Video.css';
+
 export { default as Button } from './components/button/Button';
 export { default as Input } from './components/input/Input';
 export { default as Title } from './components/title/Title';
