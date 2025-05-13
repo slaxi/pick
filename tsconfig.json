@@ -1,0 +1,31 @@
+// {
+//   "compilerOptions": {
+//     "target": "esnext", // Cilja moderni JavaScript
+//     "module": "esnext", // Koristi ES module
+//     "strict": true, // Omogućava striktni TypeScript režim
+//     "jsx": "react-jsx", // Podrška za JSX u TypeScript-u
+//     "moduleResolution": "node", // Rešava module kao Node.js
+//     "esModuleInterop": true, // Omogućava interoperabilnost sa CommonJS
+//     "skipLibCheck": true, // Preskače proveru tipova u bibliotekama
+//     "forceConsistentCasingInFileNames": true // Sprečava razlike u velikim/malim slovima
+//   },
+//   "include": ["src"], // Uključuje fajlove iz `src` foldera
+//   "exclude": ["node_modules"] // Isključuje `node_modules`
+// }
+
+{
+  "compilerOptions": {
+    "target": "esnext", // Generiše moderni JavaScript
+    "module": "esnext", // ES module
+    "declaration": true, // Generiše .d.ts fajlove
+    "outDir": "dist", // Folder za build fajlove
+    "strict": true, // Omogućava striktni TypeScript režim
+    "jsx": "react-jsx", // Podrška za JSX
+    "moduleResolution": "node", // Rešava module kao Node.js
+    "esModuleInterop": true, // Omogućava interoperabilnost sa CommonJS
+    "skipLibCheck": true, // Preskače proveru tipova u bibliotekama
+    "forceConsistentCasingInFileNames": true // Sprečava razlike u velikim/malim slovima
+  },
+  "include": ["src"], // Uključuje fajlove iz src foldera
+  "exclude": ["node_modules", "dist"] // Isključuje node_modules i dist folder
+}
