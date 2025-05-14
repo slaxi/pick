@@ -1,13 +1,13 @@
 import React from "react";
 
 type TVideoProps = {
-  src: string;
+  src?: string;
   children?: React.ReactNode;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any;
 };
 
-const Video = ({ src, children, ...props }: TVideoProps) => {
+const Video: React.FC<TVideoProps> = ({ src, children, ...props }) => {
   return (
     <>
       {children}

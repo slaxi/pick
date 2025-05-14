@@ -3,16 +3,17 @@ import Video from "../video/Video";
 import Title from "../../title/Title";
 import VideoOverlay from "../video-overlay/VideoOverlay";
 import Text from "../../text/Text";
-import '../../video/Video.css'
+import "../../video/Video.css";
 
-const VideoWrapper = ({ children }: { children?: React.ReactNode }) => {
+type TVideoWrapper = React.ComponentProps<typeof Video> & {
+  children?: React.ReactNode;
+};
+
+const VideoWrapper: React.FC<TVideoWrapper> = ({ children, ...props }) => {
   return (
     <>
       {children}
-      <Video
-        src="https://cdn.pixabay.com/video/2025/04/10/271161_tiny.mp4"
-        className="video_fullscreen"
-      >
+      <Video {...props}>
         <VideoOverlay />
         <Title heading="h2" fontSize={64} className="video_heading font-sans">
           This is the heading

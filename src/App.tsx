@@ -23,7 +23,10 @@ function App() {
       </Text>
       <Input props={{ className: "grow", inputValue: "tresnja" }} />
       <main>
-        <VideoWrapper />
+        <VideoWrapper
+          src="https://cdn.pixabay.com/video/2025/04/10/271161_tiny.mp4"
+          className="video_fullscreen"
+        />
       </main>
     </div>
   );
